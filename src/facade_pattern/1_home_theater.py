@@ -1,0 +1,26 @@
+from lib import AutoScreen, PopcornMachine, Projector, StreamPlayer, SurroundSound
+
+if __name__ == "__main__":
+    stream_player = StreamPlayer()
+    projector = Projector()
+    auto_screen = AutoScreen()
+    surround_sound = SurroundSound()
+    popcorn_machine = PopcornMachine()
+
+    print("--------- Watch Movie ---------")
+    stream_player.play("Inception")
+    projector.on()
+    projector.wide_screen_mode()
+    auto_screen.down()
+    surround_sound.on()
+    surround_sound.set_volume(5)
+    popcorn_machine.on()
+    popcorn_machine.pop()
+    print("-------------------------------")
+    print("--------- End Movie ---------")
+    popcorn_machine.off()
+    surround_sound.off()
+    auto_screen.up()
+    projector.off()
+    stream_player.stop()
+    print("-----------------------------")

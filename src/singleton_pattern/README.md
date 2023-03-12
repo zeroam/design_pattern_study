@@ -1,0 +1,2 @@
+- [singleton java example](https://www.digitalocean.com/community/tutorials/java-singleton-design-pattern-best-practices-examples)
+- [race condition](https://www.geeksforgeeks.org/multithreading-in-python-set-2-synchronization/)
